@@ -1,0 +1,32 @@
+GET http://localhost:5000/api/v1/user/abc
+
+
+###
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "admin1@gamil.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@gamil.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:5000/api/v1/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnYW1pbC5jb20iLCJpYXQiOjE2ODI1NzgwMzMsImV4cCI6MTY4MzAxMDAzM30.ymPDvnACufKv7cOmGFDWm7Qrc0-hE0kNfo5JVORDOJM
+
+###
+GET http://localhost:5000/api/v1/insert/
+
+
+###
+GET http://localhost:5000/api/v1/book
